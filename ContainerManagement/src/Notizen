@@ -1,0 +1,17 @@
+Erläuterungen: 
+
+Arbeitsteilung:
+
+Amelie: Models und Controller
+Bent: View
+
+Das Programm ist für Kunden, die Waren verschiffen wollen. Daher können über das Menü keine zusätzlichen Routen oder Schiffe erstellt werden. 
+
+Die Personen werden (abgesehen von den Kaptänen) nicht weiter benutzt. Anfänglich war die Idee auch Personen auf den Schiffen mitfahren zu lassen, dies ist dann jedoch zu umfangreich geworden. Es wäre des Weiteren auch keine neue Herausforderung sondern nur Umschreiben von bereits vorhandenem Code. Dennoch sind natürlich Demodaten für Personen vorhanden und können ausgegeben werden.
+
+
+Frischware fertig (mit Kommentaren)  --  FEHLER
+->  Gefahrengut fertig (mit Kommentaren)  --  GLEICHER FEHLER, WIE IN Frischware
+->  Wertgegenstand fertig (mit Kommentaren)  --  GLEICHER FEHLER, WIE IN Frischware
+->  Normalesgut fertig (mit Kommentaren)  --  GLEICHER FEHLER, WIE IN Frischware
+->  Tier fertig (mit Kommentaren)  --  GLEICHER FEHLER, WIE IN Frischware
