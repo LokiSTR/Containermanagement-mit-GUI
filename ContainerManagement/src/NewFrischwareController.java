@@ -15,6 +15,10 @@ import javafx.scene.*;
 
 public class NewFrischwareController {
 
+    public NewFrischwareController(){
+        //setMc(mc);
+    }
+
     //Controllervariablen
     MainController mc;
     GueterController gc;

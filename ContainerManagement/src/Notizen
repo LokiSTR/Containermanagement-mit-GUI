@@ -3,7 +3,7 @@ Erläuterungen:
 Arbeitsteilung:
 
 Amelie: Models und Controller
-Bent: View
+Bent: View und Controller außerhalb des Ordners
 
 Das Programm ist für Kunden, die Waren verschiffen wollen. Daher können über das Menü keine zusätzlichen Routen oder Schiffe erstellt werden. 
 
@@ -15,3 +15,6 @@ Frischware fertig (mit Kommentaren)  --  FEHLER
 ->  Wertgegenstand fertig (mit Kommentaren)  --  GLEICHER FEHLER, WIE IN Frischware
 ->  Normalesgut fertig (mit Kommentaren)  --  GLEICHER FEHLER, WIE IN Frischware
 ->  Tier fertig (mit Kommentaren)  --  GLEICHER FEHLER, WIE IN Frischware
+
+Verschiffung fertig, ChoiceBox hat Probleme durch FXML, bzw. Scenebuilder und VSCode, auch hier kann man noch nicht die Sachen in die ArrayList einfügen. 
+===>> Problem noch nicht gelöst

@@ -9,12 +9,9 @@ import javafx.stage.Stage;
 import model.Transport.Route;
 
 import java.io.IOException;
-// import java.net.URL;
-// import java.util.ResourceBundle;
-import java.util.ArrayList;
 
-// import javafx.collections.FXCollections;
-// import javafx.collections.ObservableList;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 // import controller.GueterController;
 import controller.MainController;
 import javafx.scene.Parent;
@@ -23,7 +20,10 @@ import javafx.scene.*;
 public class NewVerschiffungController{
 
     public NewVerschiffungController(){
-        setNvc(nvc);
+        //setMc(mc); 
+        // aus Parameter: MainController mc
+    //   InvocationTargetException, LoadException und noch ein Nullpointer bei this.mc, bzw. dem RoutenController
+        //loadDataTextfield();
     }
     
     //Controllervariablen
@@ -46,13 +46,9 @@ public class NewVerschiffungController{
     private ChoiceBox<String> choiceBoxSchiffe;
 
     //Variable zum checken der Liste i guess?
-    ArrayList<Route> tempList = new ArrayList<>();
+    // ArrayList<Route> tempList = new ArrayList<>();
 
-    // Array templist = FXCollections.observableArrayList();
-
-
-    // public NewVerschiffungController(MainSceneController mainSceneController){
-    // }
+    ObservableList<Route> templist =  FXCollections.observableArrayList();
 
     @FXML
     void VerschiffungFertig(ActionEvent event) throws IOException {
@@ -74,25 +70,20 @@ public class NewVerschiffungController{
     }
 
     public void loadDataTextfield(){
-        // templist.clear();
+        templist.clear();
         Route a = mc.getRc().getRouten().get(0);
-        // String x = "Bananen";
-        // String y = "Bananen";
         Route b = mc.getRc().getRouten().get(1);
         Route c = mc.getRc().getRouten().get(2);
         Route d = mc.getRc().getRouten().get(3);
         Route e = mc.getRc().getRouten().get(4);
 
-        // templist.addAll(a,b,c,d,e);
-        tempList.add(a);
-        tempList.add(b);
-        tempList.add(c);
-        tempList.add(d);
-        tempList.add(e);
+        templist.addAll(a,b,c,d,e);
+        
 
-        choiceBoxRouten.getItems().addAll(tempList);
+        choiceBoxRouten.getItems().addAll(templist);
 
-        System.out.println("DEbugging process yk im saiyn");
+        //Debugging
+        System.out.println("ChoiceBoxen geladen");
     }
 
 
@@ -102,12 +93,13 @@ public class NewVerschiffungController{
      * GETTER UND SETTER   
      */
     
-    public MainController getMc() {
-        return mc;
-    }
     public void setMc(MainController mc) {
         this.mc = mc;
     }
+    public MainController getMc() {
+        return mc;
+    }
+    
     public NewVerschiffungController getNvc() {
         return nvc;
     }
