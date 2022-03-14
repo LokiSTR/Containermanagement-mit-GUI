@@ -29,10 +29,6 @@ public class MainController {
         setOutput(new Output(this));
 
         createAllDemodata();
-        //printEveryObject();
-        /*getPc().printAllObjects();
-        getRc().printAllObjects();
-        getSc().printAllObjects();*/
         getMenuc().startMenu();
 
     }
