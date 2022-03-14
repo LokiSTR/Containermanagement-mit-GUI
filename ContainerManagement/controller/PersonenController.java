@@ -26,7 +26,7 @@ public class PersonenController extends ClassController {
     }
 
     public void addNewKapitaen(String vorname, String nachname, String personalnummer) {
-        Kapitaen kp = new Kapitaen(vorname, nachname, Integer.parseInt(personalnummer));
+          Kapitaen kp = new Kapitaen(vorname, nachname, Integer.parseInt(personalnummer));
         getPersonen().add(kp);
     }
 
